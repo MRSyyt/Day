@@ -1,3 +1,5 @@
+// å¼ ä¸‰ä¿®æ”¹äº†ä»£ç 
+
 #include "ActionButton.h"
 #include "HudLayer.h"
 
@@ -74,11 +76,11 @@ bool CActionButton::containsTouchLocation(  Touch* touch )
 bool CActionButton::ccTouchBegan(  Touch* touch,  Event* event )
 {
 	CCLog("ccTouchBegan");
-	// ÇøÓòÅÐ¶Ï
+	// Ã‡Ã¸Ã“Ã²Ã…ÃÂ¶Ã
 	if (!this->containsTouchLocation(touch))
 		return false;
 
-	// ²¥·Åµã»÷¶¯»­
+	// Â²Â¥Â·Ã…ÂµÃ£Â»Ã·Â¶Â¯Â»Â­
 	click();
 
 	return true;
